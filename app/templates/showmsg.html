@@ -1,0 +1,9 @@
+{% extends "base.j2" %}
+{% block bodystyle %}
+  class="{{opts.color}}"
+{% endblock %}
+{% block content %}
+<div class="card" onclick="location.href='/index'">
+	{{ opts.text }}
+</div>
+{% endblock %}

@@ -1,0 +1,12 @@
+{% extends "base.j2" %}
+{% block content%}
+<div class="outer_table">
+<div class="table" onclick="location.href='index'">
+  {% for card in opts %}
+  <div class="small_card {{card.color}}">
+    {{card.num}}
+  </div>
+  {% endfor %}
+</div>
+</a>
+{% endblock%}

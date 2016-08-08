@@ -1,0 +1,12 @@
+{% extends "base.j2" %}
+{% block content%}
+<div class="outer_table">
+<div class="table">
+  {% for card in opts %}
+  <div class="small_card {% if card.opened %} {{card.color}} {% else %} closed {% endif %}" onclick="location.href='showmsg?id={{card.num - 1 }}'">
+   {{card.num}}
+  </div>
+  {% endfor %}
+</div>
+</div>
+{% endblock%}
